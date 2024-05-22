@@ -1,0 +1,25 @@
+[
+    {
+        "key": 1,
+        "name": "Motion Lights",
+        "type": "light",
+        "ip": "10.0.0.219",
+        "port": 4554,
+        "commands": {
+            "get": [
+                "color",
+                "brightness",
+                "dim_brightness"
+            ],
+            "set": [
+                "color",
+                "brightness",
+                "dim_brightness"
+            ],
+            "action": [
+                "enable",
+                "disable"
+            ]
+        }
+    }
+]

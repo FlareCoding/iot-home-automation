@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #1c2025; /* Darker background color */
+  color: white;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh; /* Ensure the app takes at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-body {
+  display: flex;
+  flex: 1; /* Take up remaining space */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Start from the top */
+  padding: 20px;
+}
+
+.device-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Grid layout with responsive columns */
+  gap: 50px;
+  justify-items: center; /* Center items horizontally */
+  margin-top: 20px;
+  width: 100%; /* Take full width */
+  max-width: 1200px; /* Max width for better readability */
+}
+
+.device-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 180px;
+  background-color: #2e3238; /* Faint gray color */
+  border: none; /* Remove border */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.device-button:hover {
+  transform: scale(1.05);
+}
+
+.device-image-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* This ensures the container is square */
+  position: relative;
+}
+
+.device-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.device-name {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
